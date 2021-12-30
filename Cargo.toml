@@ -1,0 +1,17 @@
+[package]
+name = "extended-tea"
+version = "0.1.0"
+edition = "2021"
+authors = ["Clayton Breckel <cbrekcel@gmail.com>", "Sage <94207840+Sages0ft@users.noreply.github.com>"]
+license = "MIT"
+description = "XTEA (eXtended TEA), a block cipher designed to correct weaknesses in TEA."
+repository = "https://github.com/runecore/xtea"
+readme = "README.md"
+categories = ["development-tools", "cryptography"]
+exclude = [
+    ".github/*",
+    ".gitignore",
+]
+
+[dependencies]
+byteorder = "1"
