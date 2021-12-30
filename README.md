@@ -1,6 +1,6 @@
-# XTEA
+# extended-tea
 
-[![Build](https://github.com/runecore/xtea/workflows/build/badge.svg)](https://github.com/runecore/xtea)
+[![Build](https://github.com/runecore/xtea/actions/workflows/rust.yml/badge.svg)](https://github.com/runecore/xtea/actions/workflows/rust.yml)
 [![API](https://docs.rs/extended-tea/badge.svg)](https://docs.rs/extended-tea)
 [![Crate](https://img.shields.io/crates/v/extended-tea)](https://crates.io/crates/extended-tea)
 [![dependency status](https://deps.rs/repo/github/runecore/xtea/status.svg)](https://deps.rs/repo/github/runecore/xtea)
@@ -23,7 +23,7 @@ To use this crate, add the following to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-extended-tea = "0.1.0"
+extended-tea = "0.1.1"
 ```
 
 ## Example

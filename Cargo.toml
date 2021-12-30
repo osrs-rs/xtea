@@ -1,6 +1,6 @@
 [package]
 name = "extended-tea"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["Clayton Breckel <cbrekcel@gmail.com>", "Sage <94207840+Sages0ft@users.noreply.github.com>"]
 license = "MIT"
