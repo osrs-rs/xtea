@@ -12,6 +12,12 @@ relies on overflowing **wrapping** around, not panicking.
 
 #![cfg_attr(not(test), no_std)]
 
+/*use byteorder::{ByteOrder, ReadBytesExt, WriteBytesExt};
+use std::{
+    io::{Cursor, Read, Result, Write},
+    num::Wrapping,
+};*/
+
 use core::num::Wrapping;
 
 /// Struct containing the `XTEA` info.
