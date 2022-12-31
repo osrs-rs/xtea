@@ -10,11 +10,9 @@ This crate makes use of Wrapping<u32> in order to bypass Rusts' arithmetic overf
 relies on overflowing **wrapping** around, not panicking.
 */
 
-use byteorder::{ByteOrder, ReadBytesExt, WriteBytesExt};
-use std::{
-    io::{Cursor, Read, Result, Write},
-    num::Wrapping,
-};
+#![cfg_attr(not(test), no_std)]
+
+use core::num::Wrapping;
 
 /// Struct containing the `XTEA` info.
 ///
@@ -101,6 +99,7 @@ impl XTEA {
         output[1] = v1.0;
     }
 
+    /*
     /// Enciphers the given `&[u8]` into the output `&mut [u8]`.
     ///
     /// Uses the given [ByteOrder](https://docs.rs/byteorder) passed as a template for properly parsing the slices.
@@ -294,12 +293,11 @@ impl XTEA {
         }
         Ok(())
     }
+    */
 }
-
 #[cfg(test)]
 mod tests {
     use super::XTEA;
-    use byteorder::BE;
 
     #[test]
     fn en_de_cipher() {
@@ -319,6 +317,7 @@ mod tests {
         assert_eq!(input, decrypted);
     }
 
+    /*
     #[test]
     fn u8_slice() {
         // The two 0's at the end pad the message to 32 bytes. Needed so that input is divisible by 8.
@@ -361,4 +360,5 @@ mod tests {
 
         assert_eq!(input, decrypted);
     }
+    */
 }
